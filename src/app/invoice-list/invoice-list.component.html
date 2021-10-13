@@ -1,0 +1,7 @@
+<ul *ngFor="let item of list" class="list-group">
+    <li class="list-group-item">Facture {{item.idFacture}} : <a [routerLink]="['/invoice']" [queryParams]="{ id:item.idFacture , active:item.active}">Details</a></li>
+    <!-- 
+        PathParam
+        <li class="list-group-item">Facture {{item.idFacture}} : <a [routerLink]="['/invoice', item.idFacture,item.active]">Details</a></li>
+     -->
+</ul>
