@@ -18,6 +18,7 @@ import { MainInvoiceComponent } from './main-invoice/main-invoice.component';
 import { InvoiceListComponent } from './invoice-list/invoice-list.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { AddFormComponentComponent } from './add-form-component/add-form-component.component';
+import { AddProductTDComponentComponent } from './add-product-tdcomponent/add-product-tdcomponent.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AddFormComponentComponent } from './add-form-component/add-form-compone
     MainInvoiceComponent,
     InvoiceListComponent,
     InvoiceComponent,
-    AddFormComponentComponent
+    AddFormComponentComponent,
+    AddProductTDComponentComponent
   ],
   imports: [
     BrowserModule,
