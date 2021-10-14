@@ -17,6 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { MainInvoiceComponent } from './main-invoice/main-invoice.component';
 import { InvoiceListComponent } from './invoice-list/invoice-list.component';
 import { InvoiceComponent } from './invoice/invoice.component';
+import { AddFormComponentComponent } from './add-form-component/add-form-component.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InvoiceComponent } from './invoice/invoice.component';
     HomeComponent,
     MainInvoiceComponent,
     InvoiceListComponent,
-    InvoiceComponent
+    InvoiceComponent,
+    AddFormComponentComponent
   ],
   imports: [
     BrowserModule,

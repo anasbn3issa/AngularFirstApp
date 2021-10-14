@@ -1,0 +1,16 @@
+
+
+<form ngForm #form="ngForm">
+    <input name ="firstname" type="text" required ngModel #first="ngModel">
+    <div *ngIf="first.errors?.required">
+        champ obligatoire
+    </div>
+    <input name ="lastname" type="text" required ngModel minlength="3" #last="ngModel">
+            <div *ngIf="last.errors?.required">
+                champ obligatoire
+            </div> 
+            <div *ngIf="last.errors?.minlength">
+                Minimum 3 caractères
+            </div>
+    <button [disabled]="form.invalid">POST</button>
+</form>

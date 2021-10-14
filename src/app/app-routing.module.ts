@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddFormComponentComponent } from './add-form-component/add-form-component.component';
 import { HomeComponent } from './home/home.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { ListUserComponent } from './list-user/list-user.component';
@@ -10,7 +11,6 @@ import { MainUserComponent } from './main-user/main-user.component';
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
 
 const routes: Routes = [
- 
   {path:"", redirectTo:"home", pathMatch:"full"},
   {path:"home", component:HomeComponent},
   {path:"mainuser", component:MainUserComponent, children:[
@@ -21,6 +21,7 @@ const routes: Routes = [
   {path:"maininvoice", component:MainInvoiceComponent},
   //{path:"invoice/:id/:active", component:InvoiceComponent},
   {path:"invoice", component:InvoiceComponent},
+  {path:"form/:id", component:AddFormComponentComponent},
 
   {path:"**", component:NotFoundPageComponent}
 ];
