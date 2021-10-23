@@ -1,4 +1,8 @@
-# App4TWIN2
+#Description
+This project was developped to practice Angular12 basic functionnalities in Esprit 4TWIN2 2021-2022 
+
+
+# AngularFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.4.
 
