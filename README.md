@@ -1,5 +1,5 @@
 #Description
-This project was developped to practice Angular10 basic functionnalities in Esprit 4TWIN2 2021-2022 
+This project was developped to practice Angular12 basic functionnalities in Esprit 4TWIN2 2021-2022 
 
 
 # AngularFirstApp
