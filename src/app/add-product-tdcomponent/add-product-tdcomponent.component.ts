@@ -12,4 +12,8 @@ export class AddProductTDComponentComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ajouter(x:any) {
+    console.log(x);
+  }
+
 }

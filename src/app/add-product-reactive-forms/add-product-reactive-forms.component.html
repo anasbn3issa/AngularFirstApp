@@ -1,0 +1,77 @@
+<form [formGroup]="myForm" (submit)="addProduct()">
+
+    <!--l partie lfou9aneya mta3 l form-->
+    <div class="form-group">
+        <label>Id Produit</label>
+        <input type="text" class="form-control" formControlName="idproduit">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myIdProduit.invalid">
+        Vérifiez l'id
+    </div>
+    <div class="form-group">
+        <label>Code</label>
+        <input type="text" class="form-control" formControlName="code">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myCode.invalid">
+        Vérifiez le code
+    </div>
+    <div class="form-group">
+        <label>Libelle</label>
+        <input type="text" class="form-control" formControlName="libelle">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myLibelle.invalid">
+        Vérifiez le Libelle
+    </div>
+    <div class="form-group">
+        <label>Prix unitaire</label>
+        <input type="text" class="form-control" formControlName="prixunitaire">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myPrixUnitaire.invalid">
+        Vérifiez le code
+    </div>
+
+    <!--End of l partie lfou9aneya mta3 l form-->
+
+    <!--l partie loutaneya  mta3 l form-->
+    <div formGroupName="detailsForm">
+        <div class="form-group">
+            <label>Id details produit</label>
+            <input type="text" class="form-control" formControlName="iddetailproduit">
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="myIdDetailProduit.invalid">
+            Vérifiez le code
+        </div>
+        <div class="form-group">
+            <label>Date création</label>
+            <input type="date" class="form-control" formControlName="datecreation">
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="myDateCreation.invalid">
+            Vérifiez le code
+        </div>
+        <div class="form-group">
+            <label>Date dernière modification</label>
+            <input type="date" class="form-control" formControlName="datedernieremodification">
+        </div>
+        <div class="alert alert-danger" role="alert" *ngIf="myDateDerniereModification.invalid">
+            Vérifiez le code
+        </div>
+        <p>Categorie produit</p>
+        <select formControlName="categorie">
+            <option value="electromenager,">Electromenager</option>
+            <option value="alimentaire">Alimentaire</option>
+            <option value="quincaillerie">Hamster</option>
+        </select>
+        <div class="alert alert-danger" role="alert" *ngIf="myCategorie.invalid">
+            Vérifiez le code
+        </div>
+    
+
+    </div>
+    
+
+    <!--End of l partie loutaneya mta3 l form-->
+
+    
+    <input *ngIf="myForm.valid" type="submit" class="btn btn-primary" value="Add Product" >
+        
+</form>

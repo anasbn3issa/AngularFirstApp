@@ -1,13 +1,15 @@
 <form ngForm #form="ngForm">
     <div ngForm #formgeneral="ngForm" class="form-group">
         <label>Id Produit</label>
-        <input name ="idproduit" type="text" required ngModel #idproduit="ngModel">
-        <div *ngIf="idproduit.errors?.required">
+        <input name ="idproduit" type="text" required ngModel #idproduit="ngModel"  class="form-control">
+        <br/>
+        <div  *ngIf="idproduit.errors?.required">
             champ obligatoire
         </div>
     
         <label>Code</label>
-        <input name ="code" type="text" required minlength="8" pattern="[a-zA-Z-0-9]{8}" ngModel #code="ngModel">
+        <input name ="code" type="text" required minlength="8" pattern="[a-zA-Z-0-9]{8,}" ngModel #code="ngModel"  class="form-control">
+        <br/>
         <div *ngIf="code.errors?.required">
             champ obligatoire
         </div>
@@ -25,17 +27,20 @@
          minlength="3"
           ngModel 
           #libelle="ngModel"
+          class="form-control"
         >
+        <br/>
         <div *ngIf="libelle.errors?.required">
             champ obligatoire
         </div>
         <div *ngIf="libelle.errors?.minlength">
-            at least {{libelle.errors.minlength.requiredLength}} caracters
+            ({{libelle.errors.minlength.actualLength}}) at least {{libelle.errors.minlength.requiredLength}} caracters
          </div>
 
     
         <label>Prix unitaire</label>
-        <input name ="prisunitaire" type="text" required ngModel pattern="[1-9][0-9]*" #prisunitaire="ngModel">
+        <input name ="prisunitaire" type="text" required ngModel pattern="[1-9][0-9]*" #prisunitaire="ngModel"  class="form-control">
+        <br/>
         <div *ngIf="prisunitaire.errors?.required">
             champ obligatoire
         </div>
@@ -45,7 +50,6 @@
         <button
         [hidden]="formgeneral.valid" 
         [disabled]="formgeneral.invalid" 
-        type="submit"
         class="form-control"
         >Suivant </button>
     </div>
@@ -56,8 +60,10 @@
         <div *ngIf="iddetail.errors?.required">
             champ obligatoire
         </div>
+        <br/>
         <label>Date création</label>
         <input name ="datecreation" type="date" required ngModel #datecreation="ngModel">
+        <br/>
         <label [hidden]="datecreation.invalid">Date dernière modification</label>
         <input 
         name ="datemodif"
@@ -74,9 +80,11 @@
             <option value="alimentaire">Alimentaire</option>
             <option value="quincaillerie">Hamster</option>
         </select>
+        <br/>
         
     </div>
 
-<button [hidden]="formdetails.invalid" class="form-control">Ajouter</button>
+    <button [hidden]="formdetails.invalid || formgeneral.invalid" class="form-control">Ajouter</button>
+    <button *ngIf="form.invalid" class="form-control">Ajouter2</button>
     
 </form>

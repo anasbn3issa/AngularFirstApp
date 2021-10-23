@@ -12,6 +12,6 @@
             <div *ngIf="last.errors?.minlength">
                 Minimum 3 caractères
             </div>
-    <button type="submit">Suivant</button>
+    <button [disabled]="form.invalid" >POST</button>
     
 </form>
