@@ -5,6 +5,8 @@ import { AddProductReactiveFormsComponent } from './add-product-reactive-forms/a
 import { AddProductTDComponentComponent } from './add-product-tdcomponent/add-product-tdcomponent.component';
 import { HomeComponent } from './home/home.component';
 import { InvoiceComponent } from './invoice/invoice.component';
+import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
+import { ListProviderComponent } from './list-provider/list-provider.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { MainInvoiceComponent } from './main-invoice/main-invoice.component';
@@ -28,6 +30,8 @@ const routes: Routes = [
   {path:"addproduct", component:AddProductTDComponentComponent},
   {path:"addproduct2", component:AddProductReactiveFormsComponent},
   {path:"loginuser", component:LoginUserComponent},
+  {path:"showfacture", component:ListInvoiceComponent},
+  {path:"showProviders", component:ListProviderComponent},
 
   {path:"**", component:NotFoundPageComponent}
 ];

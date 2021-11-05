@@ -21,6 +21,14 @@ import { AddFormComponentComponent } from './add-form-component/add-form-compone
 import { AddProductTDComponentComponent } from './add-product-tdcomponent/add-product-tdcomponent.component';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { AddProductReactiveFormsComponent } from './add-product-reactive-forms/add-product-reactive-forms.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
+import { AddInvoiceComponentComponent } from './add-invoice-component/add-invoice-component.component';
+import { EditInvoiceComponent } from './edit-invoice/edit-invoice.component';
+import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
+import { ListProviderComponent } from './list-provider/list-provider.component';
+import { ShowOneProviderComponent } from './show-one-provider/show-one-provider.component';
+import { AddInvoiceComponent } from './add-invoice/add-invoice.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +49,15 @@ import { AddProductReactiveFormsComponent } from './add-product-reactive-forms/a
     AddFormComponentComponent,
     AddProductTDComponentComponent,
     LoginUserComponent,
-    AddProductReactiveFormsComponent
+    AddProductReactiveFormsComponent,
+    ParentComponent,
+    ChildComponent,
+    AddInvoiceComponentComponent,
+    EditInvoiceComponent,
+    ListInvoiceComponent,
+    ListProviderComponent,
+    ShowOneProviderComponent,
+    AddInvoiceComponent
   ],
   imports: [
     BrowserModule,

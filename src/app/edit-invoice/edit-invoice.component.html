@@ -1,0 +1,30 @@
+<form [formGroup]="myForm" (submit)="edit()">
+    <div class="form-group">
+        <label>idInvoice</label>
+        <input type="text" 
+        class="form-control" formControlName="id">
+    </div> 
+    <div class="form-group">
+        <label>discountAmount</label>
+        <input type="text" 
+        class="form-control" formControlName="discount">
+    </div>
+    <div class="form-group">
+        <label>billAmount</label>
+        <input type="text" 
+        class="form-control" formControlName="bill">
+    </div> 
+    <div class="form-group">
+        <label>dateBill</label>
+        <input type="text" 
+        class="form-control" formControlName="date">
+    </div>
+    <div class="form-group">
+        <label>Status</label>
+        <input type="text" 
+        class="form-control" formControlName="status">
+    </div>
+   
+      
+    <input type="submit" class="btn btn-primary" value="ok">       
+</form>

@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let i of invoices; let position=index">
+        {{i.idInvoice}} ** {{i.discountAmount}} ** {{i.billAmount}}
+        ** {{i.dateBill}}  ** {{i.Status}}  
+        <button (click)="editInvoice(i)">Edit</button> 
+        <button>Delete</button>
+    </li>
+</ul>
+<button (click)="showForm()">Add</button>
+<app-edit-invoice (edited)="editMyInvoice($event)" [prop2]="nb"[invoiceToEdit]="invoiceToEdit" *ngIf="show"></app-edit-invoice>
+<app-add-invoice (aded)="addInvoice($event)" *ngIf="showAdd"></app-add-invoice>
