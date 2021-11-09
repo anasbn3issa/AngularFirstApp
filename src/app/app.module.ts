@@ -29,6 +29,8 @@ import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
 import { ListProviderComponent } from './list-provider/list-provider.component';
 import { ShowOneProviderComponent } from './show-one-provider/show-one-provider.component';
 import { AddInvoiceComponent } from './add-invoice/add-invoice.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { AddInvoiceComponent } from './add-invoice/add-invoice.component';
     ListInvoiceComponent,
     ListProviderComponent,
     ShowOneProviderComponent,
-    AddInvoiceComponent
+    AddInvoiceComponent,
+    AddUserComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
