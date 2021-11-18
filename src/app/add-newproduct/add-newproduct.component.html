@@ -1,0 +1,38 @@
+<form [formGroup]="myForm" (submit)="save()">
+
+    <!--l partie lfou9aneya mta3 l form-->
+    <div class="form-group">
+        <label>Code</label>
+        <input type="text" class="form-control" formControlName="code">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myCode.invalid">
+        Vérifiez le code
+    </div>
+    <div class="form-group">
+        <label>Libelle</label>
+        <input type="text" class="form-control" formControlName="libelle">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myLibelle.invalid">
+        Vérifiez le Libelle
+    </div>
+    <div class="form-group">
+        <label>Prix unitaire</label>
+        <input type="text" class="form-control" formControlName="prixunitaire">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myPrixUnitaire.invalid">
+        Vérifiez le code
+    </div>
+    <div class="form-group">
+        <label>Taux Tva</label>
+        <input type="text" class="form-control" formControlName="tauxtva">
+    </div>
+    <div class="alert alert-danger" role="alert" *ngIf="myTauxTva.invalid">
+        Vérifiez le code
+    </div>
+
+    <!--End of l partie lfou9aneya mta3 l form-->
+
+    
+    <input *ngIf="myForm.valid" type="submit" class="btn btn-primary" value="Add Product" >
+        
+</form>

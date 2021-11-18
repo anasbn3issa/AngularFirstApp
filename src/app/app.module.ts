@@ -31,7 +31,9 @@ import { ShowOneProviderComponent } from './show-one-provider/show-one-provider.
 import { AddInvoiceComponent } from './add-invoice/add-invoice.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { ErrorComponent } from './error/error.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { ListProductsComponent } from './list-products/list-products.component';
+import { AddNewproductComponent } from './add-newproduct/add-newproduct.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,13 +63,16 @@ import { ErrorComponent } from './error/error.component';
     ShowOneProviderComponent,
     AddInvoiceComponent,
     AddUserComponent,
-    ErrorComponent
+    ErrorComponent,
+    ListProductsComponent,
+    AddNewproductComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

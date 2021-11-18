@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AddFormComponentComponent } from './add-form-component/add-form-component.component';
+import { AddNewproductComponent } from './add-newproduct/add-newproduct.component';
 import { AddProductReactiveFormsComponent } from './add-product-reactive-forms/add-product-reactive-forms.component';
 import { AddProductTDComponentComponent } from './add-product-tdcomponent/add-product-tdcomponent.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { HomeComponent } from './home/home.component';
 import { InvoiceComponent } from './invoice/invoice.component';
 import { ListInvoiceComponent } from './list-invoice/list-invoice.component';
+import { ListProductsComponent } from './list-products/list-products.component';
 import { ListProviderComponent } from './list-provider/list-provider.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { LoginUserComponent } from './login-user/login-user.component';
@@ -34,7 +36,10 @@ const routes: Routes = [
   {path:"showfacture", component:ListInvoiceComponent},
   {path:"showProviders", component:ListProviderComponent},
   {path:"addUser", component:AddUserComponent},
+  {path:"listProduct", component:ListProductsComponent},
+  {path:"addnewproduct", component:AddNewproductComponent},
 
+  
   {path:"**", component:NotFoundPageComponent}
 ];
 

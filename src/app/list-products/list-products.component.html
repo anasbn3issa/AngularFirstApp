@@ -1,0 +1,11 @@
+<ul>
+    <li *ngFor="let i of ListProduct; let position=index">
+        {{ i.id }} ** {{ i.code }} ** {{ i.libelle }} ** {{ i.prixunitaire }} ** {{ i.tauxtva }}
+        <button (click)="getNbProductsByLibelle(i.libelle)">calculer</button> 
+        <button (click)="deleteProduct(i.id)">delete</button>
+    </li>
+</ul>
+<p *ngIf="show">{{ nbProductsByLib }}</p>
+<button ><a [routerLink]="['/addnewproduct']">Add Product</a></button>
+
+
