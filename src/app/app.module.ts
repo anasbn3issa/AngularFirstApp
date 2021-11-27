@@ -32,8 +32,9 @@ import { AddInvoiceComponent } from './add-invoice/add-invoice.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { ErrorComponent } from './error/error.component';
 import { HttpClientModule } from '@angular/common/http';
-import { ListProductsComponent } from './list-products/list-products.component';
-import { AddNewproductComponent } from './add-newproduct/add-newproduct.component'
+import { ListProductsComponent } from './product/list-products/list-products.component';
+import { AddNewproductComponent } from './product/add-newproduct/add-newproduct.component';
+import { ProductModule } from './product/product.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -72,7 +73,7 @@ import { AddNewproductComponent } from './add-newproduct/add-newproduct.componen
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
