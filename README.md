@@ -1,5 +1,3 @@
-#Description
-This project was developped to practice Angular12 basic functionnalities in Esprit 4TWIN2 2021-2022 
 
 
 # AngularFirstApp
@@ -40,7 +38,9 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot] ![alt text](https://github.com/[anasbn3issa]/[AngularFirstApp]/blob/[master]/ReactiveForm.png?raw=true)
+[![Product Name Screen Shot] ![alt text] (https://github.com/[anasbn3issa]/[AngularFirstApp]/blob/[master]/ReactiveForm.png?raw=true)
+![ReactiveForm](https://user-images.githubusercontent.com/47992691/143768033-8c867665-6f28-4838-9626-a5a083de7e89.png)
+
 This project was developped to practice Angular12 basic functionnalities in Esprit 4TWIN2 2021-2022 
 
 
@@ -83,29 +83,10 @@ This is an example of how to list things you need to use the software and how to
   npm install npm@latest -g
   ```
 
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/anasbn3issa/AngularFirstApp.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/anasbn3issa) - anasben3issa@gmail.com
+Your Name - [@anasbn3issa](https://twitter.com/anasbn3issa) - anasben3issa@gmail.com
 
 Project Link: [https://github.com/anasbn3issa/AngularFirstApp](https://github.com/anasbn3issa/AngularFirstApp)
 
@@ -116,7 +97,7 @@ Project Link: [https://github.com/anasbn3issa/AngularFirstApp](https://github.co
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-This site was developed under the supervision of Ms.Ameni ROMMENE ,<strong> @Ameni ROMMENE </strong> (Computer science engineer | Esprit teacher )
+This site was developed under the supervision of Mrs . <strong> @Ameni ROMMENE </strong> (Computer science engineer | Esprit teacher )
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
